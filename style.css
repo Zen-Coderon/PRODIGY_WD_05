@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Nunito:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Poppins&family=Roboto&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -369,13 +370,18 @@ nav {
     color: var(--PRIMARY-TEXT-COLOR);
 }
 .hourly-temperature-heading{
-    background-color: #2080ff3f;
+    background-color: #ffffff1c;
     width: 20%;
-    color: #000000;
+    color: #180929;
+    
 }
+
 .hourly-temperature-heading h2 {
     white-space: nowrap;
     letter-spacing: var(--LETTER-SPACING);
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .today-at {
