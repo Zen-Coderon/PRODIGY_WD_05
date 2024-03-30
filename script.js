@@ -7,10 +7,6 @@ hamburger.addEventListener("click", () => {
   slidebar.classList.toggle("active");
 });
 
-// // || copyrights
-// const copyright = document.getElementById('copyright');
-// copyright.innerHTML = new Date().getFullYear();
-
 // || MAIN WEATHER FUNCTIONALITY
 
 // Navigation
@@ -74,6 +70,7 @@ var weekDays = [
   "Friday",
   "Saturday",
 ];
+//GR-GS1-cprights
 
 // || FUNCTION FOR GET WEATHER REPORT
 async function weatherReport(searchCity) {
@@ -96,6 +93,7 @@ function todayWeatherReport() {
   country.innerHTML =
     ' <i class="fa-sharp fa-solid fa-location-dot"></i>' +
     responseData.location.country;
+//Zen-Coderon
 
   // Box-1
   cityTemp.innerHTML = responseData.current.temp_c;
@@ -136,7 +134,7 @@ function checkUviValue(level, color) {
   uviConcernLevel.style.backgroundColor = color;
   uviConcernLevel2.innerHTML = level;
 }
-
+//Zen-Coderon
 // || Hours
 function hoursWeatherReport() {
   hoursTemp.forEach((t, i) => {
@@ -162,7 +160,7 @@ function forecastdayReport() {
       Math.round(responseData.forecast.forecastday[index].day.mintemp_c) +
       "°c";
   });
-
+//GR-GS1-cprights
   predictionDesc.forEach((d, index) => {
     d.innerHTML = responseData.forecast.forecastday[index].day.condition.text;
   });
@@ -219,9 +217,6 @@ function toggleDarkMode() {
 
 }
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const darkModeToggle = document.getElementById('darkModeToggle');
   const darkModeText = document.getElementById('darkModeText');
@@ -234,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
       darkModeText.textContent = 'Dark Mode';
     }
   });
-
+//GR-GS1-cprights
 
   if (localStorage.getItem('dark-mode') === 'enabled') {
     document.body.classList.add('dark-mode');
@@ -257,8 +252,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-
-
-// || By default city
 weatherReport("Tirupati");
